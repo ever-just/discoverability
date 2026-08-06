@@ -1,3 +1,8 @@
+---
+title: The field guide to being found
+description: How to be found by Google, Bing, AI answer engines, and AI agents — distilled from real production work.
+---
+
 # Discoverability
 
 **The field guide to being found — by Google, Bing, AI assistants, and AI agents.**
