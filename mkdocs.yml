@@ -1,0 +1,130 @@
+site_name: Discoverability
+site_description: The field guide to being found — by Google, Bing, AI assistants, and AI agents.
+site_url: https://ever-just.github.io/discoverability/
+repo_url: https://github.com/ever-just/discoverability
+repo_name: ever-just/discoverability
+edit_uri: edit/main/docs/
+copyright: EverJust — built from real production work, not theory.
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Start Here:
+      - index.md
+      - How discovery works in 2026: start/how-discovery-works.md
+      - Choose your path: start/choose-your-path.md
+      - The master checklist: start/master-checklist.md
+      - Glossary: start/glossary.md
+  - Foundations:
+      - foundations/index.md
+      - Search engines — crawl, index, rank: foundations/search-engines.md
+      - How AI finds and cites: foundations/ai-retrieval.md
+      - Entities, E-E-A-T, and trust: foundations/entities-and-trust.md
+      - Measurement and baselines: foundations/measurement.md
+  - Google:
+      - google/index.md
+      - Google Search Console: google/search-console.md
+      - Sitemaps and robots.txt: google/sitemaps-and-robots.md
+      - Structured data (schema.org): google/structured-data.md
+      - Rich results: google/rich-results.md
+      - Google Business Profile: google/business-profile.md
+      - Keyword and SERP strategy: google/keyword-strategy.md
+  - Bing & Beyond:
+      - bing/index.md
+      - Bing Webmaster Tools: bing/bing-webmaster-tools.md
+      - IndexNow: bing/indexnow.md
+  - AI Search (GEO/AEO):
+      - ai-search/index.md
+      - GEO fundamentals: ai-search/geo-fundamentals.md
+      - Content that gets cited: ai-search/content-that-gets-cited.md
+      - AI crawlers and crawlability: ai-search/ai-crawlers.md
+      - llms.txt — the reality check: ai-search/llms-txt.md
+      - The Ask-AI widget: ai-search/ask-ai-widget.md
+      - Off-site signals: ai-search/offsite-signals.md
+      - Auditing your AI visibility: ai-search/ai-visibility-audit.md
+  - AI Agents:
+      - agents/index.md
+      - The MCP Registry: agents/mcp-registry.md
+      - OAuth discovery chain: agents/oauth-discovery.md
+      - Manifests and DNS-AID: agents/manifests-and-dns.md
+      - Tool descriptions that rank: agents/tool-descriptions.md
+      - GitHub as a discovery surface: agents/github-as-discovery.md
+  - Local Business:
+      - local/index.md
+      - LocalBusiness schema graph: local/local-business-schema.md
+      - FAQ schema from visible content: local/faq-schema.md
+      - Reviews — real ones only: local/reviews.md
+      - Service-area pages: local/service-areas.md
+      - Authenticity audits: local/authenticity.md
+  - Technical:
+      - technical/index.md
+      - Domains and DNS: technical/domains-and-dns.md
+      - Email trust (SPF/DKIM/DMARC): technical/email-trust.md
+      - Reverse proxies and CMS traps: technical/reverse-proxy-cms.md
+      - Domain migrations: technical/domain-migration.md
+      - Rendering, WAFs, and bot challenges: technical/rendering-and-waf.md
+  - Playbooks:
+      - playbooks/index.md
+      - Launch a SaaS product: playbooks/saas-launch.md
+      - Launch a local business: playbooks/local-business.md
+      - The 30-minute AI visibility audit: playbooks/ai-visibility-30min.md
+      - The operating cadence: playbooks/operating-cadence.md
+  - Case Studies:
+      - case-studies/index.md
+      - customdomain.ai (SaaS): case-studies/customdomain-ai.md
+      - Heads Up Outdoor Services (local): case-studies/headsup.md
+      - everjust.app tenants (multi-tenant CMS): case-studies/everjust-tenants.md
+      - brogav.com (traffic estimation): case-studies/brogav.md
+  - Appendix:
+      - appendix/index.md
+      - Tool directory: appendix/tools.md
+      - Skill index: appendix/skills-index.md
+      - Templates: appendix/templates.md
+      - AI crawler registry: appendix/crawler-registry.md
